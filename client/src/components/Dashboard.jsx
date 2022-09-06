@@ -41,7 +41,7 @@ const Dashboard = ({ setAuth }) => {
 
         <>
             <div className="card" style={{ width: 18 + 'rem' }}>
-
+                <h1>This is a dashboard</h1>
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
