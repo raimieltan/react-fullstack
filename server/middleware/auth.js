@@ -15,7 +15,7 @@ const auth = (req, res, next) => {
         jwt.verify(token.slice(7), process.env.jwtSecret, (err, user) => {
             if(err) return res.sendStatus(403)
             req.user = user
-            console.log(user)
+       
             next()
         } )
     } catch (error) {

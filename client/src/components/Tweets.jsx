@@ -34,6 +34,7 @@ const Tweets = ({ setAuth }) => {
             )
 
             const parseRes = await response.json()
+            console.log(parseRes)
 
         } catch (error) {
             console.log(error.message)
@@ -61,10 +62,11 @@ const Tweets = ({ setAuth }) => {
     }
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            getTweets();
-          }, 1000);
-          return () => clearInterval(interval);
+        // const interval = setInterval(() => {
+        //     getTweets();
+        //   }, 1000);
+        //   return () => clearInterval(interval);
+        getTweets();
     }, [])
     return (
 

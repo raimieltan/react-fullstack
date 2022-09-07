@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import DisplayPics from "./DisplayPics";
 import Tweets from "./Tweets";
+import UploadPhoto from "./Upload";
 
 const Dashboard = ({ setAuth }) => {
     const [name, setName] = useState("");
@@ -42,18 +44,21 @@ const Dashboard = ({ setAuth }) => {
         <>
             <div className="card" style={{ width: 18 + 'rem' }}>
                 <h1>This is a dashboard</h1>
+                {/* <UploadPhoto /> */}
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" className="btn btn-primary">Go somewhere</a>
                 </div>
-
-
             </div>
+
+            
             <br></br>
             <br></br>
-            <Tweets />
+            <UploadPhoto />
+            <DisplayPics />
+            {/* <Tweets /> */}
             <button onClick={logout} className="btn btn-primary btn-block mb-4">Sign Out</button>
         </>
 
