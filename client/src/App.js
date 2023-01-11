@@ -19,6 +19,9 @@ function App() {
 
   }
 //authenticated ? renderApp() : renderLogin();
+  
+  
+  //console.log("Added a new feature")
   return (
     //router to redirect and check authentication
     <div className="App">
